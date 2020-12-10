@@ -13,7 +13,7 @@ A script that simulates on the terminal the four messages recieved by Thomas And
 
 - 'delay' and 'remain' parameters, as well as the parameters given to the 'sleep' functions used on this script try to reproduce -as accurately as possible- those from the original scene (I actually chronometered some of them one by one playing the video at a fourth of its normal speed to facilitate the task), however, as these original times (particularly the 'remain' ones) can likely result in too long a waiting for the whole script to end and your terminal to be ready to use, I recommend decreasing the values for 'delayFactor' and 'remainFactor' in the code to make characters appear faster and/or messages be cleared faster. I like to use 0.2 for 'remainFactor' and 0.7 for 'delayFactor'. You'll have to set these up manually.
  
-- A "KeyboardInterrupt" option has been added so you can exit the script excecution at anytime by pressing CTRL + C for a quick "671tcH iN Th3 M4tr1x" message. You can freely edit this to suit your prefference (actually the whole of the code as this is published under the GPL license).
+- A "KeyboardInterrupt" option has been added so you can exit the script excecution at anytime by pressing CTRL + C for a quick "671tcH iN Th3 M4tr1x" message. You can freely edit this to suit your prefference (actually the whole of the code, as I am publishing this under the GPL license).
 
 - All the text should show in light green, but actual color will depend on your terminal color palette configuration I believe. For a better emulation of the real scene configure your 'light green' terminal color to be hex #5FFFAF (the closest 256 Xterm color to the actual text color in the film).
 
