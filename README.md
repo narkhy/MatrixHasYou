@@ -18,3 +18,11 @@ A script that simulates on the terminal the four messages recieved by Thomas And
 - All the text should show in light green, but actual color will depend on your terminal color palette configuration I believe. For a better emulation of the real scene configure your 'light green' terminal color to be hex #5FFFAF (the closest 256 Xterm color to the actual text color in the film).
 
 Enjoy!
+
+Improvements I would like to add but at the present I don't know how to:
+
+- Play a sound on each character appearing emulating the real scene sound.
+
+- A way to set the font of the messages to a particular font that resembles well the original one from the scene.
+
+ if you know how to accomplish them feel free to contribute!
