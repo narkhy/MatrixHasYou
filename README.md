@@ -6,6 +6,8 @@ A script that simulates on the terminal the four messages recieved by Thomas And
     The Matrix has you...
     Follow the white rabbit.
     Knock, knock, Neo.
+    
+Watch a demonstration here: https://asciinema.org/a/378478
 
 - This script basically incorporates a function (which I called "liveType") that displays any text string (given as parameter) in a fancy way, as if it was typed live! Appart from the text string itself, the function also takes 'delay' and 'remain' parameters: the first sets the time it takes for new characters to be printed on screen, the second sets the time the whole message remains on display.
 
