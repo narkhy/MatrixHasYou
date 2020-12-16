@@ -7,26 +7,34 @@ A script that simulates on the terminal the four messages recieved by Thomas And
     Follow the white rabbit.
     Knock, knock, Neo.
     
-Watch a demonstration here: https://asciinema.org/a/378478
+Watch a demonstration here:
+https://asciinema.org/a/378478
 
-- This script basically incorporates a function (which I called "liveType") that displays any text string (given as parameter) in a fancy way, as if it was typed live! Appart from the text string itself, the function also takes 'delay' and 'remain' parameters: the first sets the time it takes for new characters to be printed on screen, the second sets the time the whole message remains on display.
+- The script can be used anyway and anywhere, though -HINT- you can use it to customize your console in GNUL systems (GNUL = "GNU/Linux") add a command line at the end of /home/[USER]/.bashrc to run the MatrixHasYou script every time you launch your terminal (i.e.; python3 MatrixHasYou.py). This way the console will greet you everytime as if you were Neo :) (achieving this was the reason why I wanted to develop this script in the first place!).
 
-- The script can be used anyway and anywhere you preffer, though -Hint- on GNUL systems (I use GNUL for GNU/Linux) it may be interesting to add a command line at the end of your .bashrc file (at your /home/[USER]/ folder) to run the MatrixHasYou script every time you launch your terminal (i.e.; python3 MatrixHasYou.py), so that it greets you everytime as if you were "Neo" and bla, bla, (achieving this behaviour for my terminal was the reason why I wanted to develop this script in the first place!). Please comment if you know of better ways to achieve the same (I've just started learning programming very recently and developing this script was my excuse to practice some Python, but I assume there are always better more elegant ways to achieve things, particularly for a begginer like me).
+- This script addresses in two different ways the problem of representing the movie scene with absolute fidelity. The first two lines drop the characters with a particular rythm, so they required a list of sleep times for each character (measured from the scene, letter by letter!). For the third line it uses a function (which I called "liveType") that displays the characters in any text string in a fancy way, as if it was being typed live (in this case at a constant rate, though, also measured from the film scene). Appart from the text string itself, "liveType" also takes 'delay' and 'remain' parameters: 'delay' sets the time it takes for new characters to appear, 'remain' sets the time the whole message will remain displayed.
 
-- 'delay' and 'remain' parameters, as well as the parameters given to the 'sleep' functions used on this script try to reproduce -as accurately as possible- those from the original scene (I actually chronometered some of them one by one playing the video at a fourth of its normal speed to facilitate the task), however, as these original times (particularly the 'remain' ones) can likely result in too long a waiting for the whole script to end and your terminal to be ready to use, I recommend decreasing the values for 'delayFactor' and 'remainFactor' in the code to make characters appear faster and/or messages be cleared faster. I like to use 0.2 for 'remainFactor' and 0.7 for 'delayFactor'. You'll have to set these up manually.
- 
-- A "KeyboardInterrupt" option has been added so you can exit the script excecution at anytime by pressing CTRL + C for a quick "671tcH iN Th3 M4tr1x" message. You can freely edit this to suit your prefference (actually the whole of the code, as I am publishing this under the GPL license).
+- As the original scene times can likely result in too long a waiting for your everyday console usage, the variables 'delayFactor' and 'remainFactor' affect the whole code, so alter them to make characters appear faster and/or messages be cleared faster. Bear in mind though that you can end the escape the script at any moment by pressing CTRL + C. This will deploy a quick "671tcH iN Th3 M4tr1x" message before exiting the script.
 
 - All the text should show in light green, but actual color will depend on your terminal color palette configuration I believe. For a better emulation of the real scene configure your 'light green' terminal color to be hex #5FFFAF (the closest 256 Xterm color to the actual text color in the film).
 
 
-Improvements I would like to add (but haven't found how to do them):
+Things I want to add (but haven't found how to do them):
 
-- Play a slight 'beep' sound on each character appearing, emulating the real scene sound.
+- Have a simple little GUI (and or CLI) from which users can determine 'remainFactor' and 'delayFactor', or change the lines, or the color, without having to edit manually the file.
 
-- Inform the code to use a particular font for the messages, one that resembles the original one from the scene, so it doesn't take the default on each system terminal.
+- Play a slight 'beep' sound on each character appearing, emulating the real scene sound. This would be cool but I ignore if achiavable. I've tryed printing 'bel' escape sequences to no success so far.
 
- if you know how to accomplish these feel free to contribute!
+- Inform the code to use a particular font for the messages (like: Tlwg Typewriter Regular) so the messages don't show in the default font on each system terminal.
+
+Please, if you know how to accomplish any of these ^ feel free to contribute on the project's Git at:
+https://github.com/narkhy/MatrixHasYou
+
+
+Also, if you like The Matrix aesthetics, try (and rate) my Matrix inspired theme for Firefox:
+https://addons.mozilla.org/es/firefox/addon/the-matrix-has-you/
 
 
 Enjoy! ... as in free beer ;)
+
+Call trans opt: received. 9-18-99 14:32:21 REC:Log>
