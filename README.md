@@ -7,10 +7,10 @@ A script that simulates with the exact right times on the terminal the four mess
     Follow the white rabbit.
     Knock, knock, Neo.
     
-Watch a demonstration here:
+Watch a (little accelerated) demonstration here:
 https://asciinema.org/a/378478
 
-- The script can be used anyway and anywhere, though -HINT- you can use it to customize your terminal in GNUL systems (GNUL = "GNU/Linux") add a command line at the end of /home/[USER]/.bashrc to run the MatrixHasYou script every time you launch your terminal (i.e.; python3 MatrixHasYou.py). This way the console will greet you everytime as if you were Neo :) (achieving this was the reason why I wanted to develop this script in the first place!).
+- The script can be used anyway and anywhere, though -HINT- you can use it to customize your terminal in GNUL systems (GNUL = "GNU/Linux") by adding a command line at the end of /home/[USER]/.bashrc to run the MatrixHasYou.py script every time you launch your terminal (i.e.; python3 MatrixHasYou.py). This way the console will greet you everytime as if you were Neo :) (achieving this was the reason why I wanted to develop this script in the first place!).
 
 - This script addresses in two different ways the problem of representing the movie scene typed messages with high fidelity. The first two lines drop the characters with a particular rythm, so they required lists of sleep times for each character (measured from the scene, letter by letter!). For the third line it uses a function (which I called "liveType") that displays the characters in any text string in a fancy way, as if it was being typed live (in this case at a constant rate, though, also measured from the film scene). Appart from the text string itself, "liveType" also takes 'delay' and 'remain' parameters: 'delay' sets the time it takes for new characters to appear, 'remain' sets the time the whole message will remain displayed.
 
@@ -31,11 +31,13 @@ Things I want to add:
 
 - Add some code so that any keyboard inputs won't be printed on screen while the script runs (since Neo presses "CTRL + X", and later "Esc" twice and these actions show nothing on his screen).
 
-Please, if you know how to accomplish any of these ^ feel free to contribute on the project's Git at:
+- for the scripts running from .bashrc ideally they should run only the first time the terminal is launched per session (otherwise, if you launch terminals often, it can rapidly become annoying), or once a day, or once every 8 hours, for instance. But I'm quite a begginer both at Shell scripting and Python and at this moment I have no idea how to accomplish that.
+
+If you know how to accomplish any of these ^ feel free to contribute on the project's Git at:
 https://github.com/narkhy/MatrixHasYou
 
 
-Also, if you like The Matrix aesthetics, try (and rate) my Matrix inspired theme for Firefox:
+If you like "The Matrix" aesthetics, try (and please rate) my Matrix inspired theme for Firefox at:
 https://addons.mozilla.org/es/firefox/addon/the-matrix-has-you/
 
 
