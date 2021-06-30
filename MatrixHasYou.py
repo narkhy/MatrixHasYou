@@ -7,7 +7,7 @@ def clearTrm ():
     '''Clears the terminal regardless of OS.
        Uses 'clear' for cool systems
        Uses 'cls' for uncool systems'''
-    _ = call('clear' if os.name == 'posix' else 'cls')
+    call('clear' if os.name == 'posix' else 'cls', shell=True)
 
 def liveType (text='liveType demo text', delay=0.02, remain=3):
     '''Makes text strings seem typed live. Inspired in the film "The Matrix".
