@@ -1,13 +1,15 @@
-import os
-from subprocess import call
+from os import system, name
 from time import sleep
 from sys import exit
 
 def clearTrm ():
     '''Clears the terminal regardless of OS.
-       Uses 'clear' for cool systems
-       Uses 'cls' for uncool systems'''
-    _ = call('clear' if os.name == 'posix' else 'cls')
+       For cool systems: 'clear'.
+       For uncool systems: 'cls'.'''
+    if name == 'posix':
+        _ = system('clear')
+    else:
+        _ = system('cls')
 
 def liveType (text='liveType demo text', delay=0.02, remain=3):
     '''Makes text strings seem typed live. Inspired in the film "The Matrix".
