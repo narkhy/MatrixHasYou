@@ -1,3 +1,5 @@
+# MatrixHasYou.py Made by narkhy, 2020.
+# This python code reproduces messages on the terminal emulating those from the film "The Matrix" (1999).
 from os import system, name
 from time import sleep
 from sys import exit
@@ -35,9 +37,9 @@ if __name__ == "__main__":
     remainFactor = 0.2    # Affects typing speed. Lower for faster emulation. '1' for real scene times.
     delayFactor = 0.7     # Affects messages display time. Lower for faster emulation. '1' for real scene times. 
 
-    _here = "\n\n\n      "
+    _here = "\n\n\n      " # This is meant for later prints positioning
 
-    urName = "Neo" # Provide times accordingly to "secs1" list if you change this to a name longer than Neo.
+    urName = "Neo" # If you change this to a name longer than "Neo" provide times accordingly to "secs1" list.
     msg1 = f"Wake up, {urName}..." 
     msg2 = "The Matrix has you..."
     msg3 = "Follow the white rabbit."
@@ -45,14 +47,20 @@ if __name__ == "__main__":
     exitMsg = "    671tcH iN Th3 M4tr1x\n"
     exitMsg2 = "         gLiTCh In tH€ WaTriX\n"
 
-    secs1 = [0, 0.1500, 0.1625, 0.1500, 0.1625, 0.1500, 0.1625, 0.1500, 0.1200, 0.1250, 0.1200, 0.1250, 0.0625, 0.0875, 0.0625]
-    secs2 = [0, 0.7325, 0.6700, 0.6000, 0.7800, 0.0950, 0.1350, 0.1075, 0.5275, 0.6225, 0.0080, 0.1200, 0.1475, 0.4500, 0.0080, 0.4275, 0.1275, 0.1425, 0.3550, 0.2275, 0.1450]
-
-    print(BOLDON + LIGHT_GREEN + CURSOROFF) # Sets text to bold green and hides the cursor.
+    # The following lists (secs1 and secs2) are the time lapses for the appearing of each character
+    # They have been measured directly from the real film scene.
+    secs1 = [0, 0.1500, 0.1625, 0.1500, 0.1625, 0.1500, # The last 3 times in secs1 are for the 3 dots (...)
+                0.1625, 0.1500, 0.1200, 0.1250, 0.1200, # so you want *them* to always be the last 3.
+                0.1250, 0.0625, 0.0875, 0.0625]         # Insert your new times per character right *before* them!
+    
+    secs2 = [0, 0.7325, 0.6700, 0.6000, 0.7800, 0.0950, 
+                0.1350, 0.1075, 0.5275, 0.6225, 0.0080, 
+                0.1200, 0.1475, 0.4500, 0.0080, 0.4275, 
+                0.1275, 0.1425, 0.3550, 0.2275, 0.1450]
 
     try:
         clearTrm()
-
+        print(BOLDON + LIGHT_GREEN + CURSOROFF, end = '') # Sets text to bold green and hides the cursor.
         print(_here, end = '')
         x1 = 0
         for i in msg1:
@@ -100,10 +108,10 @@ if __name__ == "__main__":
         print(exitMsg2, flush=True)
         sleep (0.6*remainFactor)
         clearTrm ()
-        print(CURSORON) # Unhide cursor
         print(_here, end = '')
         liveType(exitMsg, 0.045*delayFactor, 3.5*remainFactor)
+        print(CURSORON + END) # Unhide cursor
         clearTrm()
-        exit()
-    
+        exit()    
     print(CURSORON + END) # Unhide cursor and set all text formating back to system default.
+    ClearTrm()
