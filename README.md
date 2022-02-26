@@ -10,6 +10,10 @@ A script that simulates with the exact right times on the terminal the four mess
 Watch a (little accelerated) demonstration here:
 https://asciinema.org/a/378478
 
+And this is how it looks using the wonderful [cool-retro-term](https://github.com/Swordfish90/cool-retro-term)
+
+https://user-images.githubusercontent.com/75586737/155849400-ded01b46-d8f4-456f-b36d-d12acef23f96.mp4
+
 - The script can be used anyway and anywhere, though -HINT- you can use it to customize your terminal in GNUL systems (GNUL = "GNU/Linux") by adding a command line at the end of /home/[USER]/.bashrc to run the MatrixHasYou.py script every time you launch your terminal (i.e.; python3 MatrixHasYou.py). This way the console will greet you everytime as if you were Neo :) (achieving this was the reason why I wanted to develop this script in the first place!).
 
 - This script addresses in two different ways the problem of representing the movie scene typed messages with high fidelity. The first two lines drop the characters with a particular rythm, so they required lists of sleep times for each character (measured from the scene, letter by letter!). For the third line it uses a function (which I called "liveType") that displays the characters in any text string in a fancy way, as if it was being typed live (in this case at a constant rate, though, also measured from the film scene). Appart from the text string itself, "liveType" also takes 'delay' and 'remain' parameters: 'delay' sets the time it takes for new characters to appear, 'remain' sets the time the whole message will remain displayed.
@@ -21,7 +25,8 @@ https://asciinema.org/a/378478
 - All the text should show in light green, but actual color will depend on your terminal color palette configuration I believe. For a better emulation of the real scene configure your 'light green' terminal color to be hex #5FFFAF (the closest 256 Xterm color to the actual text color in the film).
 
 
-Things I want to add:
+## Things I want to add:
+Please check out the "Projects" tab of this repository and feel free to contribute! I'm very much an amatateur junior developer and I don't necesarily know -yet- how to advance all this.
 
 - Have a little GUI (and/or CLI) from which users can set 'remainFactor' and 'delayFactor', or change the text strings, or the color, or opt-out the exit messages for a faster exit, all of this without having to edit the file manually.
 
@@ -37,10 +42,10 @@ If you know how to accomplish any of these ^ feel free to contribute on the proj
 https://github.com/narkhy/MatrixHasYou
 
 
-If you like "The Matrix" aesthetics, try (and please rate) my Matrix inspired theme for Firefox at:
+If you like "The Matrix" aesthetics, try (and please rate) too my Matrix inspired theme for Firefox at:
 https://addons.mozilla.org/es/firefox/addon/the-matrix-has-you/
 
 
 Enjoy! ... as in free beer ;)
 
-Call trans opt: received. 9-18-99 14:32:21 REC:Log>
+## Call trans opt: received. 9-18-99 14:32:21 REC:Log>
