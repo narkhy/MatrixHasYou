@@ -1,4 +1,6 @@
 # MatrixHasYou
+https://user-images.githubusercontent.com/75586737/156899980-516d0624-ba36-42c2-81ca-7d6b96352df2.mp4
+Demonstration video made with [peek](https://github.com/phw/peek) and [cool-retro-term](https://github.com/Swordfish90/cool-retro-term)
 
 A script that simulates with the exact right times on the terminal the four messages recieved by Thomas Anderson ("Neo") at the beggining of the popular film "The Matrix":
 
@@ -6,13 +8,6 @@ A script that simulates with the exact right times on the terminal the four mess
     The Matrix has you...
     Follow the white rabbit.
     Knock, knock, Neo.
-    
-Watch a (little accelerated) demonstration here:
-https://asciinema.org/a/378478
-
-And this is how it looks using the wonderful [cool-retro-term](https://github.com/Swordfish90/cool-retro-term)
-
-https://user-images.githubusercontent.com/75586737/155849400-ded01b46-d8f4-456f-b36d-d12acef23f96.mp4
 
 - The script can be used anyway and anywhere, though -HINT- you can use it to customize your terminal in GNUL systems (GNUL = "GNU/Linux") by adding a command line at the end of /home/[USER]/.bashrc to run the MatrixHasYou.py script every time you launch your terminal (i.e.; python3 MatrixHasYou.py). This way the console will greet you everytime as if you were Neo :) (achieving this was the reason why I wanted to develop this script in the first place!).
 
