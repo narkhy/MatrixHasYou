@@ -114,4 +114,4 @@ if __name__ == "__main__":
         clearTrm()
         exit()    
     print(CURSORON + END) # Unhide cursor and set all text formating back to system default.
-    ClearTrm()
+    clearTrm()
